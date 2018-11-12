@@ -28,4 +28,4 @@ val emptyListOf = listOf<Int>()
 
 Note that there is not an implementation specified in the creation of these collections. Follow me to lap two as we break down the global factory methods for collections.
 
-[Back To Starting Line](/README.md) | [On To Lap 2: Factory Methods] (/creation.md)
+[Back To Starting Line](/README.md) | [On To Lap 2: Factory Methods](/creation.md)
