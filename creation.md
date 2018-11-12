@@ -52,7 +52,7 @@ val listOfNonNulls = listOfNotNull("Alpha", null, null, "Beta")
 This would result in a list of only `["Alpha", "Beta"]`
 
 ##### Back On Track
-There are various reasons for the factory methods, and here are a few that stick out to me:
+There are various benefits to the factory methods, and here are a few that stick out to me:
 1. If the underlying implementation needs to change, you should be guaranteed that the contract of the interface will be upheld.
 2. There's generally not much reason to have to specify the use of a certain collection, and generally I've seen developers default to the more common collection types when a more efficient one might be available. It's time and efficiency gained for other things if this is something that can be done by the compiler instead.
 3. Readability. The compact sense of `val list = listOf(1, 2, 3)` is a wonderful thing
