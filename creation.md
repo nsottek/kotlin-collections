@@ -42,7 +42,17 @@ val map = mapOf(1 to "First", 2 to "Second")
 val mutableMap = mutableMapOf(1 to "First", 2 to "Second")
 val array = arrayOf(1, 2, 3)
 ```
-I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods are in fact interfaces with underlying implementation that suit each case. There are various reasons for this, and here are a few that stick out to me:
+I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods are in fact interfaces with underlying implementation that suit each case.
+
+##### Pit Stop
+While we're here, there's one more thing about the collection methods found in Kotlin. There are some convenience methods like this one that are just nice:
+```kotlin
+val listOfNonNulls = listOfNotNull("Alpha", null, null, "Beta")
+```
+This would result in a list of only `["Alpha", "Beta"]`
+
+##### Back On Track
+There are various reasons for the factory methods, and here are a few that stick out to me:
 1. If the underlying implementation needs to change, you should be guaranteed that the contract of the interface will be upheld.
 2. There's generally not much reason to have to specify the use of a certain collection, and generally I've seen developers default to the more common collection types when a more efficient one might be available. It's time and efficiency gained for other things if this is something that can be done by the compiler instead.
 3. Readability. The compact sense of `val list = listOf(1, 2, 3)` is a wonderful thing
