@@ -24,7 +24,7 @@ In this case, it has been inferred that the collection is being instantiated wit
 ```kotlin
 val list = listOf(1, "Two")
 ```
-Obviously this can't be inferred as having an element type of `String` or `Int`. In you're familiar with Java, you might be tempted to say `Object` since this is the superclass of everything, and you'd basically be right. In Kotlin there is a class called `Any`, and it is extended by all the things. So in that last example, this would be inferred as a `List<Any>`.
+Obviously this can't be inferred as having an element type of `String` or `Int`. If you're familiar with Java, you might be tempted to say `Object` since this is the superclass of everything, and you'd basically be right. In Kotlin there is a class called `Any`, and it is extended by all the things. So in that last example, this would be inferred as a `List<Any>`.
 
 There are still cases where you might need to define the type that the collection will be instantiated with, such as when there are no initial values from which a type can be inferred:
 ```kotlin
