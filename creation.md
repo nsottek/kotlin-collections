@@ -31,7 +31,7 @@ There are still cases where you might need to define the type that the collectio
 val emptyList: List<Int> = emptyList()
 val emptyListOf = listOf<Int>() // both of these values would be an empty collection of Int elements
 ```
-#### Global Factory Methods
+#### Standard Library Factory Methods
 Note that there is not an implementation specified in the creation of these collections. That is part of a bigger movement in Kotlin to keep abstracting the things that can be abstracted. The following list of methods is a more expansive list of these factory methods that go along with the `listOf()` call I've shown so far:
 ```kotlin
 val list = listOf(1, 2)
