@@ -1,6 +1,0 @@
-# `Creating Collections`
-
-### Java Land
-In Java, this is what declaring a collection would look like:
-```java
-ArrayList<Int> numbers =  new ArrayList<>()```
