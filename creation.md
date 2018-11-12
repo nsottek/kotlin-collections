@@ -62,4 +62,4 @@ The documentation has this to say on the subject:
 
 That's a great segue into our next topic: `Mutability`. Follow me to lap two as we break down the concept of mutability in Kotlin collections.
 
-[Back To Starting Line](/README.md) | [On To Lap 2: `Mutability`](/creation.md)
+[Back To Starting Line](/README.md) | [On To Lap 2: `Mutability`](/mutability.md)
