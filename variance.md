@@ -15,7 +15,7 @@ If a complex type is `invariant`, it does not retain any relationship between it
 List<Integer> integerList = new ArrayList<>();
 List<Number> numberList = integerList; // does not compile
 ```
-A `List<Integer>` cannot be assigned to a `List<Number>` because `List`s are invariant (and mutable for that matter).
+A `List<Integer>` cannot be assigned to a `List<Number>` because Java `List`s are invariant (and mutable for that matter).
 ### Variance in Kotlin
 For collections in Kotlin, **read-only** collections are `covariant`. This applies to both collections created as immutable and the read-only view of a mutable collection. So for example, you can do this in Kotlin:
 ```kotlin
