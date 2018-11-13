@@ -7,13 +7,18 @@ Collections that are created as immutable cannot be modified after their initial
 val numbers = listOf(1, 2, 3)
 numbers.add(4) // this line will not compile
 ```
-Items in these collections can still be accessed, like with the indexing operator `numbers[0]` or convenience methods like `numbers.first()`, but the values it holds cannot be mutated.
+The collection in this example conforms to the `List` interface, which as mentioned in the previous section is different from the Java `List` interface in that it is immutable. Items in these immutable collections can still be accessed, like with the indexing operator `numbers[0]` or convenience methods like `numbers.first()`, but the values they hold cannot be mutated. 
 
 ### Mutable Collections
 Like I showed in [`Lap 1`](/creation.md#standard-library-factory-methods), there are separate methods for creating immutable vs. mutable collections. The following would be for a mutable list:
 ```kotlin
 val numbers = mutableListOf(1, 2, 3)
+numbers.add(4)
+println(numbers) // prints "[1, 2, 3, 4]"
 ```
+The collection in this example conforms to the `MutableList` interface, which implements the `List` interface and is more like the `List` interface found in Java. For these mutable collections, you would be able to call any of the standard mutating functions like `add`, `remove`, `set`, and `clear`.
+
+### Can I Get One From The Other?
 Now, say you want to get an immutable list from this mutable list so that you could pass it along to somewhere that should not have the right to mutate its values. There is a simple convenience method called `.toList()` that *copies* the values into a **new**, immutable list object. The same concept also applies in reverse, as in going from an immutable list to a mutable list only requires calling `.toMutableList()`. To demonstrate:
 ```kotlin
 val numbers = mutableListOf(1, 2, 3)
