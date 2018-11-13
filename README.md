@@ -3,7 +3,7 @@ A markdown overview of Kotlin Collections
 
 ## Start your engines
 
-[Lap One: Creating Collections](/creation.md)
+[Lap 1: Creating Collections](/creation.md)
 
 
 #### Kotlin Documentation on Collections
