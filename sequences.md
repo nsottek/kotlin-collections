@@ -36,3 +36,5 @@ println("Sequence = ${(measureTimeMillis { sequence.map { it * 2 }.filter { it %
 In this case, running this operation chain with a sequence yielded a result about 20 times faster. Despite the fact that the gains are not necessarily this large all the time, a hint added since Kotlin 1.2.70 states that a multiple operation chain on a collection should be changed to a sequence.
 
 There's a much more in depth discussion and explanation of all of this [here on the Kotlin blog][kotlin-blog], and another one particularly regarding speed of operations [here on a Medium article][sequences-speed-article]
+
+[Back To Lap 4: Collection Operators](/operators.md) | [On To The Finish Line](/fin.md)
