@@ -37,4 +37,4 @@ In this case, running this operation chain with a sequence yielded a result abou
 
 There's a much more in depth discussion and explanation of all of this [here on the Kotlin blog][kotlin-blog], and another one particularly regarding speed of operations [here on a Medium article][sequences-speed-article]
 
-[Back To Lap 4: Collection Operators](/operators.md) | [On To The Finish Line](/fin.md)
+[Back To Lap 4: Collection Operators](/operators.md) | [On To Finish Line](/fin.md)
