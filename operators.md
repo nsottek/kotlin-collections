@@ -9,7 +9,7 @@ for (Animal animal: animalList) {
 ```
 In Kotlin:
 ```kotlin
-list.forEach {
+animalList.forEach {
   it.adopted = true
 }
 ```
