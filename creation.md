@@ -3,7 +3,7 @@
 ### Java Land
 In Java, this is what declaring a collection would look like:
 ```java
-ArrayList<Int> numbers =  new ArrayList<>()
+List<Int> numbers =  new ArrayList<>()
 ```
 Note that Java requires the manual specification of the type for that collection. That is because the `ArrayList` signature takes a generic type that needs to be defined:
 ```java
@@ -11,7 +11,7 @@ public ArrayList(Collection <? extends E> c) { ... }
 ```
 That generic type `E` is what needs to be specified explicitly. Additionally, most collections have to be instantiated before items can be added to them, though there are some convenience methods exist that make creation easier like so:
 ```java
-ArrayList<Integer> numbers = new ArrayList<>( Arrays.asList(1, 2, 3, 4) );
+List<Integer> numbers = new ArrayList<>( Arrays.asList(1, 2, 3, 4) );
 ```
 However this is still fairly verbose when compared to the same in Kotlin, which is consistent with comparing other aspects of these languages.
 
@@ -42,7 +42,9 @@ val map = mapOf(1 to "First", 2 to "Second")
 val mutableMap = mutableMapOf(1 to "First", 2 to "Second")
 val array = arrayOf(1, 2, 3)
 ```
-I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods are in fact interfaces with underlying implementation that suit each case.
+I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods are in fact interfaces with underlying implementation that suit each case. 
+
+We'll get to this in more detail later, but notice the `listOf` and `mutableListOf` calls. The `List` interface is now an immutable list by default in Kotlin, whereas in Java `List` encompassed all of the common list functionality.
 
 ##### Pit Stop
 While we're here, there's one more thing about the collection methods found in Kotlin. There are some convenience methods like this one that are just nice:
