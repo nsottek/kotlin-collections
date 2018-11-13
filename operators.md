@@ -33,8 +33,8 @@ println("$filteredResult") // prints "[DOG, CAT]"  (overridden toString)
 The `.partition` function separates a collection into two collections and returns a `Pair` of collections 
 ```kotlin
 val animalList = listOf(Dog(true), Cat(true), Lizard())
-val filteredResult = animalList.partition { it.getAdopted() }
-println("$filteredResult") // prints "([DOG, CAT], [LIZARD])"
+val partitionResult = animalList.partition { it.getAdopted() }
+println("$partitionResult") // prints "([DOG, CAT], [LIZARD])"
 ```
 #### Map
 The `.map` function applies a transformation to each element in the collection and returns the results as a list. This is especially helpful when needing to transform lists of objects that don't have a 1:1 relationship.
