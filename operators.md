@@ -42,7 +42,7 @@ The `.map` function applies a transformation to each element in the collection a
 I'll also slip in the `.joinToString` operator which creates a string from all the elements in a collection using a supplied `separator`, `prefix`, or `postfix` if desired.
 ```kotlin
 val dogNetworkResponseList = listOf(DogNetworkResponse(false), DogNetworkResponse(true), DogNetworkResponse(true))
-val mapResult = dogNetworkResponseList.map { Dog(it.getAdopted()) }
+val mapResult = dogNetworkResponseList.map { Dog(it.getAdopted()) } // creates a list of Dogs with the corresponding adoption status
 println("${mapResult.joinToString { it.getAdopted().toString() }}") // prints "false, true, true"
 ```
 #### Get Or Null
@@ -50,6 +50,6 @@ The `.getOrNull` function handily tries to get the element at a certain index in
 
 
 
-Again, these are just a few examples of what you can do with the collection operators. Please go check them out in the official docs and play around with them so that you can add these to your toolbelt: [`Collection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html) and [`MutableCollection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)
+Again, these are just a few examples of what you can do with the collection operators. Please go check them out in the official docs and play around with them so that you can add them to your toolbelt: [`Collection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html) and [`MutableCollection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)
 
 [Back To Lap 3](/variance.md) | [On To Lap 5: `Sequences`](/sequences.md)
