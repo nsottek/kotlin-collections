@@ -53,4 +53,4 @@ println(numbersReadOnlyView) // prints "[1, 2, 3, 4]"
 ```
 As you can see, despite `numbersReadOnlyView` being immutable, that value itself is referencing the mutable list whose values can change. So while calling `.add(5)` does not compile, the `.add(4)` call to the original list changes the values that the read only val is referencing.
 
-[Back To Lap 1: `Creating Collections`](/creation.md) | [On To Lap 3: `Variance`](/variance.md)
+[Back To Lap 1: `Creating Collections`](/creation.md) | [On To Lap 3: `Collection Operators`](/operators.md)
