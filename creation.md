@@ -11,7 +11,7 @@ public ArrayList(Collection <? extends E> c) { ... }
 ```
 That generic type `E` is what needs to be specified explicitly. Additionally, most collections have to be instantiated before items can be added to them, though there are some convenience methods exist that make creation easier like so:
 ```java
-List<Integer> numbers = new ArrayList<>( Arrays.asList(1, 2, 3, 4) );
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 ```
 However this is still fairly verbose when compared to the same in Kotlin, which is consistent with comparing other aspects of these languages.
 
