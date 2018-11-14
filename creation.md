@@ -42,7 +42,7 @@ val map = mapOf(1 to "First", 2 to "Second")
 val mutableMap = mutableMapOf(1 to "First", 2 to "Second")
 val array = arrayOf(1, 2, 3)
 ```
-I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods are in fact interfaces with underlying implementation that suit each case. 
+I will note that there are technically other implementation specific methods for using certain collection types, but it is generally encouraged to use these factory methods for creating a collection. The factory methods return interface types with underlying implementation that suit each case. 
 
 We'll get to this in more detail later, but notice the `listOf` and `mutableListOf` calls. The `List` interface is now an immutable list by default in Kotlin, whereas in Java `List` encompassed all of the common list functionality.
 
