@@ -1,7 +1,7 @@
 [kotlin-blog]: https://blog.kotlin-academy.com/effective-kotlin-use-sequence-for-bigger-collections-with-more-than-one-processing-step-649a15bb4bf
 [sequences-speed-article]: https://medium.com/@elye.project/kotlin-slow-list-and-lazy-sequence-61691fc974c5
 ## `Sequences`
-So for most of the previous examples of operators in [`Lap 4`](/operators.md#Examples), they use extension functions made on the Iterable interface. The collection is iterated through in one way or another and the various operations can be made on each element. However, there is another creation in Kotlin that takes a different approach to traversing through a list and applying operations. The name of this creation is a `Sequence`.
+So for most of the previous examples of operators in [`Lap 3`](/operators.md#Examples), they use extension functions made on the Iterable interface. The collection is iterated through in one way or another and the various operations can be made on each element. However, there is another creation in Kotlin that takes a different approach to traversing through a list and applying operations. The name of this creation is a `Sequence`.
 ### Sequences Vs. Collections
 The TLDR version of this is that sequences are used mainly for multi-operation chains and can technically be infinite, while the collection extensions get the job done with less overhead for single operation chains on a finite collection.
 
@@ -37,4 +37,4 @@ In this case, running this operation chain with a sequence yielded a result abou
 
 There's a much more in depth discussion and explanation of all of this [here on the Kotlin blog][kotlin-blog], and another one particularly regarding speed of operations [here on a Medium article][sequences-speed-article]
 
-[Back To Lap 4: Collection Operators](/operators.md) | [On To Finish Line](/fin.md)
+[Back To Lap 3: Collection Operators](/operators.md) | [On To Finish Line](/fin.md)
