@@ -52,4 +52,4 @@ The `.getOrNull` function handily tries to get the element at a certain index in
 
 Again, these are just a few examples of what you can do with the collection operators. Please go check them out in the official docs and play around with them so that you can add them to your toolbelt: [`Collection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html) and [`MutableCollection`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)
 
-[Back To Lap 3: `Variance`](/variance.md) | [On To Lap 5: `Sequences`](/sequences.md)
+[Back To Lap 2: `Mutability`](/mutability.md) | [On To Lap 4: `Sequences`](/sequences.md)
